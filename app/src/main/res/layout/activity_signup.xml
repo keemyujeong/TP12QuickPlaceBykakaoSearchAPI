@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/black"
+    tools:context=".activities.SignupActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이메일계정 만들기"
+        android:fontFamily="@font/suncheon"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_login_tv"
+        android:hint="이메일"
+        android:textColor="@color/white"
+        android:textColorHint="#FF333333"
+        android:textSize="14sp"
+        android:padding="16dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginLeft="64dp"/>
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_login_tv"
+        android:hint="비밀번호"
+        android:textColorHint="#FF333333"
+        android:textSize="14sp"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:inputType="textPassword"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginLeft="64dp"/>
+    <EditText
+        android:id="@+id/et_password_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_login_tv"
+        android:hint="비밀번호 확인"
+        android:textColorHint="#FF333333"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:padding="16dp"
+        android:inputType="textPassword"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginLeft="64dp"/>
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="sign up"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="40dp"
+        android:padding="16dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="64dp"
+        android:textColor="@color/black"/>
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".activities.LoginActivity">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="장소찾기"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/suncheon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_tv_go"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp"
+        android:text="번개 장소를 둘러보세요"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/bg_login_tv"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="회원가입"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/layout_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_signup"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_login_tv"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_baseline_email_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="이메일로 로그인"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_above="@id/layout_email"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/btn_login_kakao"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_kakako"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+        <ImageView
+            android:id="@+id/btn_login_google"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_google"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+        <ImageView
+            android:id="@+id/btn_login_naver"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_naver"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_login_btn"
+        android:text="간편하게 로그인하기"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+
+
+
+
+</RelativeLayout>
